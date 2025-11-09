@@ -248,3 +248,63 @@ footer .socials a:hover {
   font-size: 0.9rem;
   text-align: center;
 }
+
+/* === ABOUT SECTION === */
+.about {
+  padding: 6rem 8% 4rem;
+  background: #111;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 1rem auto;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* === CONTACT SECTION === */
+.contact {
+  padding: 6rem 8% 4rem;
+  text-align: center;
+  background: #0f0f0f;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 1rem auto 2rem;
+  color: #ccc;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-links a {
+  color: #00eaff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+.contact-links a:hover {
+  opacity: 0.8;
+}
+
+.contact-links i {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* === SECTION TITLES === */
+.section-title {
+  font-size: 2rem;
+  color: #00eaff;
+  margin-bottom: 2rem;
+  position: relative;
+}
