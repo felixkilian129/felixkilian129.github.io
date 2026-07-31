@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projekte und technische Fallstudien von Felix Kilian / ArgentWatch.">
+  <meta name="description" content="Öffentliche Projekte, anonymisierte Fallstudien und CTF-Ergebnisse von Felix Kilian / ArgentWatch.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Projekte | ArgentWatch">
+  <meta property="og:description" content="Softwareprojekte, Enterprise-Integrationen und CTF-Ergebnisse von Felix Kilian / ArgentWatch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://argentwatch.de/projects.html">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/146344904?v=4">
+  <link rel="canonical" href="https://argentwatch.de/projects.html">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/146344904?v=4">
   <title>Projekte | ArgentWatch</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +20,9 @@
 
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ArgentWatch Startseite">
-      <span class="brand-mark" aria-hidden="true">AW</span>
+      <span class="brand-mark" aria-hidden="true">
+        <img src="https://avatars.githubusercontent.com/u/146344904?v=4" alt="" width="44" height="44" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+      </span>
       <span>
         <strong>ARGENTWATCH</strong>
         <small>Felix Kilian</small>
@@ -39,13 +48,13 @@
 
     <section class="section-shell section-block" aria-labelledby="public-projects-title">
       <div class="section-heading">
-        <p class="eyebrow">Open Source</p>
-        <h2 id="public-projects-title">Öffentliche Projekte</h2>
+        <p class="eyebrow">Public & Personal Work</p>
+        <h2 id="public-projects-title">Softwareprojekte</h2>
       </div>
 
       <div class="card-grid project-grid">
         <article class="card project-card">
-          <div class="card-topline"><span>Security Tooling</span><span>Development</span></div>
+          <div class="card-topline"><span>Security Tooling</span><span>Open Source</span></div>
           <h3>SecWatch</h3>
           <p>
             Experimenteller On-Host-Security-Agent, der Webserver-Logs verarbeitet, verdächtige Aktivität erkennt,
@@ -54,7 +63,7 @@
           <ul class="tag-list" aria-label="Technologien">
             <li>Python</li><li>Linux</li><li>Docker</li><li>Pytest</li><li>Incident Response</li>
           </ul>
-          <p class="project-note">Status: Entwicklung, nicht produktionsreif.</p>
+          <p class="project-note">Experimenteller Entwicklungsstand; nicht für Produktivsysteme freigegeben.</p>
           <a class="text-link" href="https://github.com/ArgentWatch/secwatch" target="_blank" rel="noopener noreferrer">Repository ansehen →</a>
         </article>
 
@@ -72,7 +81,7 @@
         </article>
 
         <article class="card project-card">
-          <div class="card-topline"><span>Personal Software</span><span>In Development</span></div>
+          <div class="card-topline"><span>Personal Software</span><span>Private Project</span></div>
           <h3>KitchenCompanion</h3>
           <p>
             Persönliches Inventar-, Rezept- und Einkaufsmanagementsystem mit Fokus auf Datenmodellierung,
@@ -81,7 +90,7 @@
           <ul class="tag-list" aria-label="Technologien">
             <li>Python</li><li>SQL</li><li>API Design</li><li>Automation</li><li>Architecture</li>
           </ul>
-          <span class="text-link text-muted">Öffentliche Version in Vorbereitung</span>
+          <span class="text-link text-muted">Repository privat · Projektbeschreibung öffentlich</span>
         </article>
       </div>
     </section>
@@ -125,21 +134,6 @@
               </ul>
             </div>
           </article>
-
-          <article class="case-study">
-            <div class="case-index">03</div>
-            <div>
-              <p class="eyebrow">Application Operations</p>
-              <h3>Reproduzierbare Anwendungsumgebungen</h3>
-              <p>
-                Betrieb und Pflege mehrerer containerisierter Anwendungsstände mit getrennten Profilen, Volumes,
-                Backup-Strategien und dokumentierten Update-Abläufen für Linux- und Tomcat-Umgebungen.
-              </p>
-              <ul class="tag-list">
-                <li>Docker</li><li>Tomcat</li><li>Linux</li><li>Backups</li><li>Deployment</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -147,18 +141,30 @@
     <section id="cyber-apocalypse" class="section-shell section-block" aria-labelledby="ctf-title">
       <div class="ctf-panel">
         <div>
-          <p class="eyebrow">Hack The Box</p>
+          <p class="eyebrow">Capture the Flag</p>
           <h2 id="ctf-title">Cyber Apocalypse 2026</h2>
           <p>
-            Bei meiner ersten Cyber-Apocalypse-Teilnahme trat ich solo an. Im Mittelpunkt stand für mich nicht nur das Lösen,
-            sondern ein reproduzierbarer Workflow aus Artefaktinventar, Hypothesenbildung, Evidenzprüfung und technischer Dokumentation.
+            Bei meiner ersten Cyber-Apocalypse-Teilnahme trat ich solo unter dem Teamnamen N3tForce an.
+            Im Mittelpunkt stand für mich nicht nur das Lösen, sondern ein reproduzierbarer Workflow aus
+            Artefaktinventar, Hypothesenbildung, Evidenzprüfung und technischer Dokumentation.
           </p>
+          <p>
+            Das offizielle Teilnahmezertifikat bestätigt Rang 417 von 6.744 Teams,
+            100 von 136 gelöste Challenges und 34.900 Punkte.
+          </p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://ctf.hackthebox.com/user/profile/512641" target="_blank" rel="noopener noreferrer">HTB-Profil</a>
+            <a class="button button-secondary" href="https://ctftime.org/user/267640" target="_blank" rel="noopener noreferrer">CTFtime-Profil</a>
+            <a class="button button-secondary" href="https://ctftime.org/team/443377/" target="_blank" rel="noopener noreferrer">CTFtime-Team</a>
+          </div>
         </div>
         <dl class="stats-grid">
           <div><dt>Rang</dt><dd>417</dd></div>
+          <div><dt>Teams</dt><dd>6.744</dd></div>
+          <div><dt>Challenges</dt><dd>100 / 136</dd></div>
           <div><dt>Punkte</dt><dd>34.900</dd></div>
-          <div><dt>Flags</dt><dd>100 / 136</dd></div>
           <div><dt>Teamgröße</dt><dd>1</dd></div>
+          <div><dt>Zeitraum</dt><dd style="font-size:1rem;">24.–29.07.2026</dd></div>
         </dl>
       </div>
     </section>
