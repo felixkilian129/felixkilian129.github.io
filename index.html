@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio von Felix Kilian / ArgentWatch: Software Engineering, Backend- und API-Integration, Automatisierung und IT Security.">
   <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="ArgentWatch | Felix Kilian">
+  <meta property="og:description" content="Software Engineering, Automation und IT Security mit einem evidenzbasierten und reproduzierbaren Ansatz.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://argentwatch.de/">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/146344904?v=4">
+  <link rel="canonical" href="https://argentwatch.de/">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/146344904?v=4">
   <title>ArgentWatch | Felix Kilian</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +20,9 @@
 
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="ArgentWatch Startseite">
-      <span class="brand-mark" aria-hidden="true">AW</span>
+      <span class="brand-mark" aria-hidden="true">
+        <img src="https://avatars.githubusercontent.com/u/146344904?v=4" alt="" width="44" height="44" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+      </span>
       <span>
         <strong>ARGENTWATCH</strong>
         <small>Felix Kilian</small>
@@ -44,7 +53,13 @@
       </div>
 
       <aside class="hero-panel" aria-label="Technische Schwerpunkte">
-        <div class="status-line"><span class="status-dot"></span> Portfolio im Aufbau</div>
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;position:relative;z-index:1;">
+          <img src="https://avatars.githubusercontent.com/u/146344904?v=4" alt="ArgentWatch Raben-Avatar" width="96" height="96" style="width:6rem;height:6rem;border-radius:50%;object-fit:cover;border:1px solid var(--line-strong);box-shadow:0 0 28px rgba(101,214,255,.18);">
+          <div>
+            <p class="eyebrow" style="margin-bottom:.35rem;">Felix Kilian / ArgentWatch</p>
+            <div class="status-line" style="margin-bottom:0;"><span class="status-dot"></span>Status: Active</div>
+          </div>
+        </div>
         <dl class="signal-grid">
           <div>
             <dt>Engineering</dt>
@@ -91,8 +106,8 @@
         <article class="card featured-card">
           <div class="card-topline"><span>CTF</span><span>Solo</span></div>
           <h3>Cyber Apocalypse 2026</h3>
-          <p>Rang 417, 34.900 Punkte und 100 gelöste Flags bei meiner ersten Solo-Teilnahme an Hack The Box Cyber Apocalypse.</p>
-          <a class="text-link" href="projects.html#cyber-apocalypse">Ergebnis und Methodik →</a>
+          <p>Rang 417, 34.900 Punkte und 100 gelöste Challenges bei meiner ersten Solo-Teilnahme an Hack The Box Cyber Apocalypse.</p>
+          <a class="text-link" href="projects.html#cyber-apocalypse">Ergebnis und Profile →</a>
         </article>
       </div>
     </section>
@@ -136,7 +151,7 @@
 
   <footer class="site-footer">
     <p>© 2026 Felix Kilian · ArgentWatch</p>
-    <p>Software Engineering · Automation · IT Security</p>
+    <p><a href="https://github.com/ArgentWatch" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/felix-kilian-109b002b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
   </footer>
 </body>
 </html>
