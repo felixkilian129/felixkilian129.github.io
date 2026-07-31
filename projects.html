@@ -3,144 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projekte – Felix Kilian</title>
+  <meta name="description" content="Projekte und technische Fallstudien von Felix Kilian / ArgentWatch.">
+  <meta name="theme-color" content="#07111f">
+  <title>Projekte | ArgentWatch</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Felix Kilian</div>
-    <nav>
-      <a href="index.html">Startseite</a>
-      <a href="projects.html" class="active">Projekte</a>
-      <a href="#contact">Kontakt</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ArgentWatch Startseite">
+      <span class="brand-mark" aria-hidden="true">AW</span>
+      <span>
+        <strong>ARGENTWATCH</strong>
+        <small>Felix Kilian</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="index.html#about">Über mich</a>
+      <a class="active" href="projects.html">Projekte</a>
+      <a href="index.html#contact">Kontakt</a>
     </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section class="projects" style="margin-top:6rem;">
-    <h2 class="section-title">Projekte</h2>
-    <div class="projects-grid">
+  <main id="main-content">
+    <section class="page-hero section-shell">
+      <p class="eyebrow">Projects & Case Studies</p>
+      <h1>Technische Arbeit mit nachvollziehbarem Ergebnis.</h1>
+      <p>
+        Eine Auswahl öffentlicher Werkzeuge, eigener Softwareprojekte und anonymisierter beruflicher Fallstudien.
+        Interne Kundendaten, Quellcode und sensible Architekturdetails bleiben bewusst außen vor.
+      </p>
+    </section>
 
-      <!-- SecWatch -->
-      <div class="project-card">
-        <div class="project-header">
-          <i data-lucide="shield"></i>
+    <section class="section-shell section-block" aria-labelledby="public-projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Open Source</p>
+        <h2 id="public-projects-title">Öffentliche Projekte</h2>
+      </div>
+
+      <div class="card-grid project-grid">
+        <article class="card project-card">
+          <div class="card-topline"><span>Security Tooling</span><span>Development</span></div>
           <h3>SecWatch</h3>
-        </div>
-        <p>
-          Host-basierter Security-Agent zur Echtzeitüberwachung von Server-Logs, Prozessen und Netzwerkaktivitäten. 
-          Erkennt Anomalien, erstellt Reports und kann automatisierte Gegenmaßnahmen auslösen. 
-          Entwickelt als internes Tool zur Sicherheitsüberwachung in Linux-Umgebungen.
-        </p>
-        <div class="tags">
-          <span>Python</span><span>Linux</span><span>Bash</span><span>Docker</span><span>Automation</span>
-        </div>
-        <div class="os-icons">
-          <i data-lucide="terminal"></i><span>Linux</span>
-        </div>
-        <a href="https://github.com/Lucifer66609/secwatch" target="_blank" class="project-link">🡕 GitHub</a>
+          <p>
+            Experimenteller On-Host-Security-Agent, der Webserver-Logs verarbeitet, verdächtige Aktivität erkennt,
+            Incidents strukturiert archiviert und optionale Gegenmaßnahmen auslösen kann.
+          </p>
+          <ul class="tag-list" aria-label="Technologien">
+            <li>Python</li><li>Linux</li><li>Docker</li><li>Pytest</li><li>Incident Response</li>
+          </ul>
+          <p class="project-note">Status: Entwicklung, nicht produktionsreif.</p>
+          <a class="text-link" href="https://github.com/ArgentWatch/secwatch" target="_blank" rel="noopener noreferrer">Repository ansehen →</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="card-topline"><span>System Diagnostics</span><span>Open Source</span></div>
+          <h3>System Diagnosis</h3>
+          <p>
+            Electron-Desktop-App und Node.js-CLI zur Erfassung strukturierter Gesundheits- und Diagnoseberichte
+            für Windows, Linux und angeschlossene Android-Geräte.
+          </p>
+          <ul class="tag-list" aria-label="Technologien">
+            <li>Electron</li><li>Node.js</li><li>PowerShell</li><li>Linux</li><li>ADB</li>
+          </ul>
+          <a class="text-link" href="https://github.com/ArgentWatch/system-diagnosis" target="_blank" rel="noopener noreferrer">Repository ansehen →</a>
+        </article>
+
+        <article class="card project-card">
+          <div class="card-topline"><span>Personal Software</span><span>In Development</span></div>
+          <h3>KitchenCompanion</h3>
+          <p>
+            Persönliches Inventar-, Rezept- und Einkaufsmanagementsystem mit Fokus auf Datenmodellierung,
+            Backend-Logik, Automatisierung und eine modular erweiterbare Architektur.
+          </p>
+          <ul class="tag-list" aria-label="Technologien">
+            <li>Python</li><li>SQL</li><li>API Design</li><li>Automation</li><li>Architecture</li>
+          </ul>
+          <span class="text-link text-muted">Öffentliche Version in Vorbereitung</span>
+        </article>
       </div>
+    </section>
 
-      <!-- Athena -->
-      <div class="project-card">
-        <div class="project-header">
-          <i data-lucide="bot"></i>
-          <h3>Athena</h3>
+    <section class="section-block section-muted" aria-labelledby="case-studies-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Professional Work</p>
+          <h2 id="case-studies-title">Anonymisierte Fallstudien</h2>
+          <p>Die folgenden Projekte beschreiben meine Rolle und Methodik, ohne Kunden- oder Unternehmensinterna offenzulegen.</p>
         </div>
-        <p>
-          Sprachgesteuerte Desktop-Assistentin mit Systemdiagnose, App-Kontrolle, Kalenderintegration und Lernfähigkeit. 
-          Entwickelt als Cross-Platform-Assistent mit Fokus auf Produktivität und AI-Integration.
-        </p>
-        <div class="tags">
-          <span>Python</span><span>React</span><span>Node.js</span><span>AI</span>
+
+        <div class="case-list">
+          <article class="case-study">
+            <div class="case-index">01</div>
+            <div>
+              <p class="eyebrow">Enterprise Integration</p>
+              <h3>Geschäftskritische EDI-Integration</h3>
+              <p>
+                Konzeption und eigenständige technische Umsetzung eines automatisierten EDI-Prozesses für den Austausch
+                elektronischer Geschäftsdokumente. Dazu gehörten Anforderungsanalyse, Übertragungswege, Validierung,
+                Fehleranalyse und Betriebsdokumentation.
+              </p>
+              <ul class="tag-list">
+                <li>EDI</li><li>AS2</li><li>X.400</li><li>SFTP</li><li>Systemintegration</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-index">02</div>
+            <div>
+              <p class="eyebrow">Backend & ERP</p>
+              <h3>Sage-100-API und kundenspezifische Integrationen</h3>
+              <p>
+                Erweiterung bestehender REST-API-Funktionen um Validierung, Geschäftslogik und kundenspezifische Prozesse.
+                Neue Anforderungen wurden technisch bewertet, in Backend-Komponenten überführt und im ERP-Umfeld integriert.
+              </p>
+              <ul class="tag-list">
+                <li>C#</li><li>REST APIs</li><li>Sage 100</li><li>SQL</li><li>Business Logic</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="case-study">
+            <div class="case-index">03</div>
+            <div>
+              <p class="eyebrow">Application Operations</p>
+              <h3>Reproduzierbare Anwendungsumgebungen</h3>
+              <p>
+                Betrieb und Pflege mehrerer containerisierter Anwendungsstände mit getrennten Profilen, Volumes,
+                Backup-Strategien und dokumentierten Update-Abläufen für Linux- und Tomcat-Umgebungen.
+              </p>
+              <ul class="tag-list">
+                <li>Docker</li><li>Tomcat</li><li>Linux</li><li>Backups</li><li>Deployment</li>
+              </ul>
+            </div>
+          </article>
         </div>
-        <div class="os-icons">
-          <i data-lucide="monitor"></i><span>Windows</span>
-          <i data-lucide="terminal"></i><span>Linux</span>
-        </div>
-        <a href="#" class="project-link disabled">🚧 Coming Soon</a>
       </div>
+    </section>
 
-      <!-- Cross-Platform Diagnostic Tool -->
-      <div class="project-card">
-        <div class="project-header">
-          <i data-lucide="activity"></i>
-          <h3>Cross-Platform Diagnostic Tool</h3>
+    <section id="cyber-apocalypse" class="section-shell section-block" aria-labelledby="ctf-title">
+      <div class="ctf-panel">
+        <div>
+          <p class="eyebrow">Hack The Box</p>
+          <h2 id="ctf-title">Cyber Apocalypse 2026</h2>
+          <p>
+            Bei meiner ersten Cyber-Apocalypse-Teilnahme trat ich solo an. Im Mittelpunkt stand für mich nicht nur das Lösen,
+            sondern ein reproduzierbarer Workflow aus Artefaktinventar, Hypothesenbildung, Evidenzprüfung und technischer Dokumentation.
+          </p>
         </div>
-        <p>
-          Modulares Tool zur Hardware-, Prozess- & Systemanalyse mit PDF-Reports, OS-Erkennung und plattformspezifischen Modulen. 
-          Entwickelt für IT-Analysen und Systemdiagnosen unter Windows und Linux.
-        </p>
-        <div class="tags">
-          <span>Python</span><span>psutil</span><span>Bash</span><span>Reportlab</span>
-        </div>
-        <div class="os-icons">
-          <i data-lucide="monitor"></i><span>Windows</span>
-          <i data-lucide="terminal"></i><span>Linux</span>
-        </div>
-        <a href="#" class="project-link disabled">🚧 Coming Soon</a>
+        <dl class="stats-grid">
+          <div><dt>Rang</dt><dd>417</dd></div>
+          <div><dt>Punkte</dt><dd>34.900</dd></div>
+          <div><dt>Flags</dt><dd>100 / 136</dd></div>
+          <div><dt>Teamgröße</dt><dd>1</dd></div>
+        </dl>
       </div>
+    </section>
+  </main>
 
-      <!-- Aegis Dashboard / Olympus OS -->
-      <div class="project-card">
-        <div class="project-header">
-          <i data-lucide="layout-dashboard"></i>
-          <h3>Aegis Dashboard / Olympus OS</h3>
-        </div>
-        <p>
-          AI-basiertes Desktop-Dashboard mit integrierten Productivity-, Monitoring- und Security-Modulen. 
-          Entwickelt als Konzeptplattform für modulare, erweiterbare Arbeitsumgebungen.
-        </p>
-        <div class="tags">
-          <span>React</span><span>Electron</span><span>Node.js</span><span>Python</span>
-        </div>
-        <div class="os-icons">
-          <i data-lucide="monitor"></i><span>Windows</span>
-          <i data-lucide="terminal"></i><span>Linux</span>
-        </div>
-        <a href="#" class="project-link disabled">🚧 Coming Soon</a>
-      </div>
-
-      <!-- Kitchen Companion -->
-      <div class="project-card">
-        <div class="project-header">
-          <i data-lucide="utensils"></i>
-          <h3>Kitchen Companion</h3>
-        </div>
-        <p>
-          Rezept- und Vorratsverwaltung mit Wochenplan, Datensynchronisation und Fokus auf Nutzerfreundlichkeit. 
-          Entwickelt als praktisches Alltags-Tool mit klarer, modularer Code-Struktur.
-        </p>
-        <div class="tags">
-          <span>Python</span><span>SQLite</span><span>JSON</span><span>GUI</span>
-        </div>
-        <div class="os-icons">
-          <i data-lucide="monitor"></i><span>Windows</span>
-          <i data-lucide="terminal"></i><span>Linux</span>
-        </div>
-        <a href="#" class="project-link disabled">🚧 Coming Soon</a>
-      </div>
-
-    </div>
-    <p class="note">Einige Projekte befinden sich derzeit in Überarbeitung.</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Felix Kilian. Alle Rechte vorbehalten.</p>
-    <div class="socials">
-      <a href="https://github.com/Lucifer66609" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/felix-kilian" target="_blank">LinkedIn</a> |
-      <a href="mailto:felix.kilian3@outlook.com">E-Mail</a>
-    </div>
+  <footer class="site-footer">
+    <p>© 2026 Felix Kilian · ArgentWatch</p>
+    <p><a href="index.html">Startseite</a> · <a href="https://github.com/ArgentWatch" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/felix-kilian-109b002b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
   </footer>
-
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>

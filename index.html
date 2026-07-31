@@ -3,83 +3,140 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felix Kilian – Portfolio</title>
+  <meta name="description" content="Portfolio von Felix Kilian / ArgentWatch: Software Engineering, Backend- und API-Integration, Automatisierung und IT Security.">
+  <meta name="theme-color" content="#07111f">
+  <title>ArgentWatch | Felix Kilian</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Felix Kilian</div>
-    <nav>
-      <a href="projects.html">Projekte</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="ArgentWatch Startseite">
+      <span class="brand-mark" aria-hidden="true">AW</span>
+      <span>
+        <strong>ARGENTWATCH</strong>
+        <small>Felix Kilian</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="Hauptnavigation">
       <a href="#about">Über mich</a>
+      <a href="projects.html">Projekte</a>
       <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Hallo, ich bin <span>Felix Kilian</span></h1>
-      <h2>Werkstudent in Softwareentwicklung & IT-Security Student</h2>
-      <p>
-        Ich entwickle funktionale, effiziente und sichere Softwarelösungen – mit Fokus auf Automatisierung, 
-        Systemintegration und technische Erweiterungen für Low-Code-Plattformen.
-      </p>
-      <a href="projects.html" class="cta-btn">Meine Projekte ansehen</a>
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Software Engineering · Automation · IT Security</p>
+        <h1>Observe. Analyze.<br><span>Calculate. Automate.</span></h1>
+        <p class="hero-lead">
+          Ich bin Felix Kilian, Software Engineer und IT-Security-Student. Unter dem Alias
+          <strong>ArgentWatch</strong> entwickle, analysiere und dokumentiere ich technische Systeme
+          mit einem evidenzbasierten und reproduzierbaren Ansatz.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="projects.html">Projekte ansehen</a>
+          <a class="button button-secondary" href="https://github.com/ArgentWatch" target="_blank" rel="noopener noreferrer">GitHub öffnen</a>
+        </div>
+      </div>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2 class="section-title">Über mich</h2>
-    <p>
-      Ich bin IT-Security Student mit Leidenschaft für Softwareentwicklung, Automatisierung und KI-Systeme.
-      Mein Fokus liegt darauf, technische Tiefe und Benutzerfreundlichkeit zu vereinen.
-    </p>
-    <p>
-      Aktuell arbeite ich als Werkstudent im Bereich <strong>Softwareentwicklung & Automatisierung</strong>. 
-      Dabei entwickle ich interne Code-Module, Skripte und API-Integrationen, 
-      die meine Kolleg:innen bei der Umsetzung von Low-Code-Projekten unterstützen. 
-      Mein Schwerpunkt liegt auf der Erweiterung von Plattformfunktionen, Prozessautomatisierung 
-      und technischer Schnittstellenentwicklung.
-    </p>
-  </section>
+      <aside class="hero-panel" aria-label="Technische Schwerpunkte">
+        <div class="status-line"><span class="status-dot"></span> Portfolio im Aufbau</div>
+        <dl class="signal-grid">
+          <div>
+            <dt>Engineering</dt>
+            <dd>Backend, APIs, Systemintegration</dd>
+          </div>
+          <div>
+            <dt>Operations</dt>
+            <dd>Docker, Linux, Tomcat, CI/CD</dd>
+          </div>
+          <div>
+            <dt>Security</dt>
+            <dd>CTFs, Analyse, sichere Systeme</dd>
+          </div>
+          <div>
+            <dt>Methodik</dt>
+            <dd>Evidenz, Reproduzierbarkeit, Dokumentation</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Kontakt</h2>
-    <p>
-      Ich freue mich über berufliche Kontakte und fachlichen Austausch rund um IT-Security, 
-      Softwareentwicklung und Automatisierung.<br>
-      Sie können mich direkt über folgende Kanäle erreichen:
-    </p>
+    <section class="section-shell section-block" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2 id="featured-title">Ausgewählte Projekte</h2>
+        <p>Öffentliche Werkzeuge, technische Fallstudien und dokumentierte Security-Arbeit.</p>
+      </div>
 
-    <div class="contact-links">
-      <a href="https://www.linkedin.com/in/felix-kilian-109b002b1/" target="_blank">
-        <i data-lucide="linkedin"></i> LinkedIn: felix-kilian
-      </a>
-      <a href="https://github.com/felixkilian129" target="_blank">
-        <i data-lucide="github"></i> GitHub: felixkilian129
-      </a>
-    </div>
-  </section>
+      <div class="card-grid">
+        <article class="card featured-card">
+          <div class="card-topline"><span>Security Tooling</span><span>Python</span></div>
+          <h3>SecWatch</h3>
+          <p>Experimenteller On-Host-Agent zur Log-Analyse, Erkennung verdächtiger Aktivitäten und strukturierten Incident-Erfassung.</p>
+          <a class="text-link" href="https://github.com/ArgentWatch/secwatch" target="_blank" rel="noopener noreferrer">Repository ansehen →</a>
+        </article>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Felix Kilian. Alle Rechte vorbehalten.</p>
-    <div class="socials">
-      <a href="https://github.com/felixkilian129" target="_blank">GitHub</a> |
-      <a href="https://www.linkedin.com/in/felix-kilian" target="_blank">LinkedIn</a> |
-      <a href="mailto:felix.kilian3@outlook.com">E-Mail</a>
-    </div>
+        <article class="card featured-card">
+          <div class="card-topline"><span>Diagnostics</span><span>Electron / Node.js</span></div>
+          <h3>System Diagnosis</h3>
+          <p>Desktop-App und CLI für nachvollziehbare Systemdiagnosen unter Windows, Linux und Android.</p>
+          <a class="text-link" href="https://github.com/ArgentWatch/system-diagnosis" target="_blank" rel="noopener noreferrer">Repository ansehen →</a>
+        </article>
+
+        <article class="card featured-card">
+          <div class="card-topline"><span>CTF</span><span>Solo</span></div>
+          <h3>Cyber Apocalypse 2026</h3>
+          <p>Rang 417, 34.900 Punkte und 100 gelöste Flags bei meiner ersten Solo-Teilnahme an Hack The Box Cyber Apocalypse.</p>
+          <a class="text-link" href="projects.html#cyber-apocalypse">Ergebnis und Methodik →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section-block section-muted">
+      <div class="section-shell split-layout">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Softwareentwicklung mit Blick auf das Gesamtsystem</h2>
+        </div>
+        <div class="prose">
+          <p>
+            In meiner aktuellen Rolle entwickle und integriere ich individuelle Softwarelösungen im ERP- und Unternehmensumfeld.
+            Meine Schwerpunkte liegen auf C#, REST APIs, EDI, Datenbanken, Docker und technischer Infrastruktur.
+          </p>
+          <p>
+            Parallel studiere ich IT Security an der Hochschule Albstadt-Sigmaringen. Langfristig möchte ich Software Engineering,
+            DevOps und Security enger miteinander verbinden – mit Fokus auf sichere Architektur, Automatisierung und Purple-Team-Arbeit.
+          </p>
+          <ul class="principles">
+            <li>Evidenz vor Annahmen.</li>
+            <li>Reproduzierbarkeit statt Einzellösung.</li>
+            <li>Dokumentation ist Teil des Engineerings.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell section-block contact-panel" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Fachlicher Austausch und Projekte</h2>
+        <p>Am besten erreichst du mich über LinkedIn oder über das passende Repository auf GitHub.</p>
+      </div>
+      <div class="button-row">
+        <a class="button button-primary" href="https://www.linkedin.com/in/felix-kilian-109b002b1/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="button button-secondary" href="https://github.com/ArgentWatch" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Felix Kilian · ArgentWatch</p>
+    <p>Software Engineering · Automation · IT Security</p>
   </footer>
-
-  <script>
-    lucide.createIcons();
-  </script>
 </body>
 </html>
